@@ -1,40 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 .calculator {
-    width: 250px;
-    margin: 50px auto;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  #display {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 24px;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    box-sizing: border-box;
-    text-align: right;
-  }
-  
-  .keys button {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #999;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius: 50px;
-  }
-  
-  .keys button:hover {
-    background-color: bisque;
-  }
-  
-  .keys button:active {
-    background-color: #999;
-  }
-  
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+.calculator p {
+  font-size: 18px;
+}
+.calculator p u {
+  font-weight: bold;
+}
+.calculator #display {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: right;
+  border-radius: 50px;
+}
+.calculator .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  border-radius: 50px;
+}
+.calculator .buttons button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+}
+.calculator .buttons button:hover {
+  background-color: #0056b3;
+}
